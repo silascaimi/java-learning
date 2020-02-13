@@ -8,4 +8,4 @@
 
 ## JavaEE
 ### JSF
-  - [Arquivos referencias](/jsf/referenciais)
+  - [Arquivos referencias](/referenciais/jsf)
