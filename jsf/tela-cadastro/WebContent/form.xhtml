@@ -7,19 +7,6 @@
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>Tela de Cadastro</title>
-	
-	<script>
-		function validarSenha(){
-			var senha1 = document.getElementById("form:senha1").value;
-			var senha2 = document.getElementById("form:senha2").value;
-			if(senha1 == senha2){
-				return true;
-			}
-			
-			alert("Senhas não conferem");
-			return false;
-		}
-	</script>
 </h:head>
 <h:body>
 	<h:form id="form">
@@ -59,7 +46,20 @@
 			</h:selectManyCheckbox>
 		</h:panelGrid>
 
-		<h:commandButton value="Cadastrar" action="result" onclick="return validarSenha();" />
+		<h:commandButton value="Cadastrar" action="result"
+			onclick="return validarSenha();" />
 	</h:form>
+	<script>
+		function validarSenha() {
+			var senha1 = document.getElementById("form:senha1").value;
+			var senha2 = document.getElementById("form:senha2").value;
+			if (senha1 == senha2) {
+				return true;
+			}
+
+			alert("Senhas não conferem");
+			return false;
+		}
+	</script>
 </h:body>
 </html>
