@@ -28,3 +28,4 @@
 - [Usando os resources](jsf/usando-resources/WebContent)
 - [Usando os conversores](jsf/usando-conversores)
 - [Conversores customizados](jsf/conversor-customizado)
+- [Usando validadores](jsf/usando-validadores)
