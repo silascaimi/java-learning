@@ -2,19 +2,20 @@
 
 ## Projects
 
-## Basic
+## JavaSE
+### Basic
 - [Entrada de dados com Scanner](basic/data-input/src/br/com/input/)
 - [Strings](basic/strings/src/br/com/java/basic/strings)
 - [Datas](basic/date/src/datas)
 
-## Advanced
+### Advanced
 -
 
 ## Api
 - [log4j](api/log4j)
 
 ## JavaEE
-### JSF
+### [JSF](jsf/Index.md)
 #### Basic
 - [Arquivos referenciais](jsf/referenciais)
 - [Navegação entre telas](jsf/navegar-entre-telas)
