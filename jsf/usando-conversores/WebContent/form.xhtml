@@ -11,28 +11,33 @@
 <h:body>
 	<h:form>
 		<h:messages />
-		<!-- <h:messages for="id " showSummary="true" showDetail="false"/> -->
 		<h:panelGrid columns="3">
 			Número inteiro:
 			<h:inputText id="numeroInteiro" value="#{form.numeroInteiro}" />
 			<h:message for="numeroInteiro" />
+			<!-- <h:message for="id " showSummary="true" showDetail="false"/> -->
 			
 			Número decimal:
-			<h:inputText id="numeroDecimal" value="#{form.numeroDecimal}" />
+			<h:inputText id="numeroDecimal" value="#{form.numeroDecimal}">
+				<f:convertNumber minFractionDigits="2" maxFractionDigits="2"
+					goupingUsed="false" />
+			</h:inputText>
 			<h:message for="numeroDecimal" />
 			
 			Caractere:
-			<h:inputText id="caractere" value="#{form.caractere}" />
-			<h:message for="caractere" />
+			<h:inputText id="caractere" value="#{form.caractere}"
+				converterMesage="Erro de conversao" />
+			<!-- Mensagem de erro no proprio componente -->
 			
 			Data (dd/mm/yyyy):
-			<h:inputText id="data" value="#{form.data}" >
-				<f:convertDateTime pattern="dd/MM/yyyy"/>
+			<h:inputText id="data" value="#{form.data}">
+				<f:convertDateTime pattern="dd/MM/yyyy" />
 			</h:inputText>
 			<h:message for="data" />
 			
 			Opção (OP_1/OP_2):
-			<h:inputText id="opcao" value="#{form.opcao}" converterMessage="Favor escolher OP_1/OP_2" />
+			<h:inputText id="opcao" value="#{form.opcao}"
+				converterMessage="Favor escolher OP_1/OP_2" />
 			<h:message for="opcao" />
 
 			<h:commandButton value="Processar" action="#{form.processar}" />
