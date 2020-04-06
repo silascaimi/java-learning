@@ -13,10 +13,11 @@ public class Aplicacao {
 		Produto p3 = new Produto(5, "Arroz", 5.2);
 		Produto p4 = new Produto(1, "Lentilha", 3.9);
 		Produto p5 = new Produto(2, "Macarrão", 4.0);
+		Produto p6 = new Produto(2, "Macarrão", 4.0);
 		
 		
 		// Utiliza o CompareTo da propria classe
-		// Set<Produto> produtos = new TreeSet<>();
+		//Set<Produto> produtos = new TreeSet<>();
 		
 		// Utiliza um Comparator para ordenar o Set
 		// Ordenar em ordem alfabética utilizando a classe DescricaoComparator
@@ -25,17 +26,18 @@ public class Aplicacao {
 		
 		List<Produto> produtos = new ArrayList<>();
 		
-		// Ordena os itens utilizando o CompareTo da propria classe
-		Collections.sort(produtos);
-		// Ordena os itens utilizando Comparator
-		Collections.sort(produtos, new DescricaoComparator());
-		
 		produtos.add(p1);
 		produtos.add(p2);
 		produtos.add(p3);
 		produtos.add(p4);
 		produtos.add(p5);
+		produtos.add(p6);
 		
+		// Ordena os itens utilizando o CompareTo da propria classe
+		Collections.sort(produtos);
+		// Ordena os itens utilizando Comparator
+		Collections.sort(produtos, new DescricaoComparator());
+
 		for (Produto produto : produtos) {
 			System.out.println(produto);
 		}	
