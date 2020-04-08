@@ -1,10 +1,13 @@
 package com.java.comparable_e_comparator;
 
-public class Produto implements Comparable<Produto>{
+import java.util.Comparator;
 
+public class Produto implements Comparable<Produto>{
 	private int id;
 	private String titulo;
 	private double preco;
+	
+	public static final Comparator<Produto> BY_ID = Comparator.comparing(Produto::getId);
 	
 	public Produto(int id, String titulo, double preco) {
 		this.id = id;

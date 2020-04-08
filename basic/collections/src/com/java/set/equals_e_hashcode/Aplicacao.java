@@ -1,4 +1,4 @@
-package com.java.map.equals_e_hashcode;
+package com.java.set.equals_e_hashcode;
 
 import java.util.HashSet;
 import java.util.Set;
