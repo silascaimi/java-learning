@@ -8,39 +8,52 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 		/*
-		 * // Método 1 try (InputStream is = new FileInputStream("entrada.txt")) {
+		 * // Método 1
 		 * 
-		 * byte[] buffer = new byte[1024];
+		 * try (InputStream is = new FileInputStream("entrada.txt")) {
 		 * 
-		 * int bytesLidos = is.read(buffer); // Quantidade de bytes lidos
+		 * 		byte[] buffer = new byte[1024];
 		 * 
-		 * String texto = new String(buffer, 0, bytesLidos); // Cria String com
-		 * bytesLidos para evitar lixo System.out.println(texto); }
+		 * 		int bytesLidos = is.read(buffer); // Quantidade de bytes lidos
+		 * 
+		 * 		// Cria String com bytesLidos para evitar lixo
+		 * 		String texto = new String(buffer, 0, bytesLidos); 
+		 * 		
+		 * 		System.out.println(texto);
+		 * 		}
 		 * 
 		 */
 
 		/*
-		 * // Método 2 // Maneira de criação dinâmica alocando apenas o espaço
-		 * necessário try (InputStream is = new FileInputStream("entrada.txt")) {
+		 * // Método 2 // Maneira de criação dinâmica alocando apenas o espaço necessário
 		 * 
-		 * byte[] buffer = new byte[4];
+		 * try (InputStream is = new FileInputStream("entrada.txt")) {
 		 * 
-		 * StringBuilder texto = new StringBuilder(); int bytesLidos;
+		 * 		byte[] buffer = new byte[4];
 		 * 
-		 * while((bytesLidos = is.read(buffer)) > -1) { texto.append(new String(buffer,
-		 * 0, bytesLidos)); }
+		 * 		StringBuilder texto = new StringBuilder(); int bytesLidos;
 		 * 
-		 * System.out.println(texto); }
+		 * 		while((bytesLidos = is.read(buffer)) > -1) { texto.append(new String(buffer,
+		 * 		0, bytesLidos)); }
+		 * 
+		 * 		System.out.println(texto);
+		 * }
 		 */
 
 		/*
-		 * // Método 3 // Maneira mais simples de se trabalhar try(BufferedReader reader
-		 * = new BufferedReader(new FileReader("entrada.txt"))){
+		 * // Método 3 // Maneira mais simples de se trabalhar
 		 * 
-		 * String texto = ""; String line; while ((line = reader.readLine()) != null) {
-		 * texto += line + "\n"; }
+		 * try(BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))){
 		 * 
-		 * System.out.println(texto); }
+		 * 		String texto = "";
+		 * 		String line;
+		 * 		
+		 * 		while ((line = reader.readLine()) != null) {
+		 * 			texto += line + "\n";
+		 * 		}
+		 * 
+		 * 		System.out.println(texto);
+		 * 		}
 		 */
 
 		// Método mais simplificado

@@ -20,7 +20,6 @@ public class Aplicacao {
 		 * os.write(buffer); }
 		 */
 		 
-
 		
 		/*
 		 * // Método 2
@@ -32,7 +31,7 @@ public class Aplicacao {
 		// Método 3
 		// Continua gravando no final do arquivo existente
 		  try (PrintWriter pw = new PrintWriter(new FileOutputStream("saida.txt", true))) {
-		  pw.println(s);
+			  pw.println(s);
 		  }
 		  
 	}
