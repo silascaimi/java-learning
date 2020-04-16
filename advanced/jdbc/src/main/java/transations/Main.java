@@ -24,34 +24,28 @@ public class Main {
 				conn.setAutoCommit(false);
 				
 				stmt.setString(1, "Sardinha");
-				stmt.addBatch();
-				stmt.executeBatch();
+				stmt.executeUpdate();
 				
 				o = null;
 				o.toString();
 				
 				stmt.setString(1, "Bife");
-				stmt.addBatch();
-				stmt.executeBatch();
+				stmt.executeUpdate();
 				
 				// Aplica o commit
 				conn.commit();		
-				
-				
-				
+
 				
 				// Alternativa
 				try {
 					stmt.setString(1, "Sardinha");
-					stmt.addBatch();
-					stmt.executeBatch();
+					stmt.executeUpdate();
 					
 					o = null;
 					o.toString();
 					
 					stmt.setString(1, "Bife");
-					stmt.addBatch();
-					stmt.executeBatch();
+					stmt.executeUpdate();
 					
 					// Aplica o commit
 				} catch (Exception e) {
