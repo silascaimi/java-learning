@@ -1,4 +1,4 @@
-package connection;
+package connection.drivermanager;
 
 public class Main {
 
