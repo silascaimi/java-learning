@@ -21,6 +21,8 @@
 	</build>
 
 	<dependencies>
+	
+	<!-- JDBC Dependencies -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
