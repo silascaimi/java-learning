@@ -34,6 +34,13 @@
 			<version>3.4.0</version>
 		</dependency>
 
+		<!-- SLF4J LOGGING -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-nop</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+
 		<!-- EJB Dependencies -->
 		<dependency>
 			<groupId>jakarta.ejb</groupId>
