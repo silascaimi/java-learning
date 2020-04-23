@@ -34,6 +34,32 @@
 			<version>3.4.0</version>
 		</dependency>
 
+		<!-- EJB Dependencies -->
+		<dependency>
+			<groupId>jakarta.ejb</groupId>
+			<artifactId>jakarta.ejb-api</artifactId>
+			<version>3.2.5</version>
+		</dependency>
+
+		<!-- CDI Dependencies -->
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jcdi_2.0_spec</artifactId>
+			<version>1.0.1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-atinject_1.0_spec</artifactId>
+			<version>1.0</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-annotation_1.3_spec</artifactId>
+			<version>1.1</version>
+		</dependency>
+
 	</dependencies>
 
 </project>
