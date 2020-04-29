@@ -31,7 +31,6 @@ public class Aplicacao {
 		
 		System.out.println();
 		
-		
 		// Obtendo  e invocar um método
 		Televisao tv = new Televisao();
 		Method mudarCanal = tvClass.getDeclaredMethod("mudarCanal", int.class);
@@ -39,8 +38,6 @@ public class Aplicacao {
 		
 		Method ligarTv = tvClass.getDeclaredMethod("ligar");
 		ligarTv.invoke(tv);
-		
-		
 	}
 
 }
