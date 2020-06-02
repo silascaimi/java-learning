@@ -17,7 +17,10 @@
 - [log4j](api/log4j)
 
 ## JavaEE
-### [JSF](jsf/Index.md)
+### Servers
+- [Wildfly](servers/wildfly/setting_user.txt)
+
+### JSF
 #### Basic
 - [Arquivos referenciais](jsf/referenciais)
 - [Navegação entre telas](jsf/navegar-entre-telas)
