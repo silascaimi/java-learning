@@ -13,6 +13,8 @@
 <body>
 <h:outputStylesheet library="css" name="styles.css" />
 
+<h:messages styleClass="message" />
+
 <h:form>
 <h:dataTable value="#{table.despesas}" var="d" styleClass="tabela" headerClass="cabecalho"
 	columnClasses="colNumero,colData,colDesc,colValor,colOp" rendered="#{table.despesas.rowCount > 0}">
@@ -65,8 +67,10 @@
 </h:dataTable>
 
 <h:panelGroup rendered="#{table.despesas.rowCount == 0}">
-	<h:outputText value="Não existem despesas cadastradas" styleClass="message" /><br /><br />
+	<h:outputText value="Não existem despesas cadastradas" styleClass="message" />
 </h:panelGroup>
+
+<br />
 
 <h:commandButton value="Inserir" action="#{table.inserir}" />
 </h:form>
