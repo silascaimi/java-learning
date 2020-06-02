@@ -1,0 +1,1 @@
+Para adicionar usuário e poder admininstrar o server basta acessar a pasta do servidor e abrir o arquivo add-user.bat
